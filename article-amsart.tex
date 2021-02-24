@@ -1,0 +1,173 @@
+\documentclass[reqno, a4paper]{amsart}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+
+% PAGE DIMENSION
+\usepackage[scale=0.9]{geometry}
+
+% BIBLIOGRAPHY
+\usepackage{natbib}
+\usepackage{bibentry} % inline refereces
+
+% ENCODING, LANGUAGE
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+
+% GRAPHICS
+\usepackage{subfig}
+\usepackage{graphicx}
+
+% HYPERTEXT, SOURCE CODE SPECIALS
+\usepackage[unicode]{hyperref}
+\usepackage[active]{srcltx} % use TeX-souce-specials-mode
+
+% SYMBOLS, FONTS
+\usepackage{mathbbol}
+\usepackage{bm} % sophisticated \boldsymbol
+%\usepackage{stmaryrd}
+\usepackage{MnSymbol} % \lsem, \rsem, tensor product :
+\usepackage{gensymb}
+\usepackage{eurosym}
+
+% UNITS, TYPESETTING TENSORS
+\usepackage{units}
+\usepackage{tensor}
+\usepackage{accents}
+
+% COMPACT LIST ENVIRONMENT
+\usepackage{enumitem}
+
+% LINE NUMBERS
+\usepackage{lineno}
+
+% TABLE OF CONTENTS IN TWO COLUMNS
+% \usepackage[toc]{multitoc} % It seems that it does not work with amsart
+% the workaround is the command
+% \addtocontents{toc}{\protect\begin{multicols}{2}} % workaround for table of contents in two columns in amsart documentclass
+% see below
+\usepackage{multicol}
+
+% SELECTIVELY INCLUDE/EXCLUDE PARTS OF TEXT
+\usepackage{comment}
+
+% FLOAT BARRIER
+\usepackage{placeins}
+
+\input{vit-prusa-macros-experimental}
+
+\title[]{}
+
+\author{V\'{\i}t Pr\r{u}\v{s}a}
+\date{\today}
+\address{
+% Texas A\&M University\\
+% Department of Mechanical Engineering\\
+% 3123 TAMU\\
+% College Station TX 77843-3123\\
+% United States of America
+Faculty of Mathematics and Physics\\
+Charles University\\
+Sokolovsk\'a 83\\
+Praha 8 -- Karl\'{\i}n\\
+CZ 186\;75\\
+Czech Republic
+}
+\email{prusv@karlin.mff.cuni.cz}
+
+% \author{K. R. Rajagopal}
+% \address{
+% Texas A\&M University\\
+% Department of Mechanical Engineering\\
+% 3123 TAMU\\
+% College Station TX 77843-3123\\
+% United States of America
+% }
+% \email{krajagopal@tamu.edu}
+
+% \author{Miroslav Bul\'{\i}\v{c}ek}
+% \address{
+% Faculty of Mathematics and Physics\\
+% Charles University\\
+% Sokolovsk\'a 83\\
+% Praha 8 -- Karl\'{\i}n\\
+% CZ 186\;75\\
+% Czech Republic
+% }
+% \email{mbul8060@karlin.mff.cuni.cz}
+
+% \author{Josef M\'alek}
+% \address{
+% Faculty of Mathematics and Physics\\
+% Charles University\\
+% Sokolovsk\'a 83\\
+% Praha 8 -- Karl\'{\i}n\\
+% CZ 186\;75\\
+% Czech Republic
+% }
+% \email{malek@karlin.mff.cuni.cz}
+
+% \author{Endre S\"uli}
+% \address{
+% Mathematical Institute\\
+% University of Oxford\\
+% Radcliffe Observatory Quarter\\
+% Woodstock Road\\
+% Oxford OX2 6GG\\
+% United Kingdom
+% }
+% \email{suli@maths.ox.ac.uk}
+
+% \author{Mark Dostal\'{\i}k}
+% \address{
+% Faculty of Mathematics and Physics\\
+% Charles University\\
+% Sokolovsk\'a 83\\
+% Praha 8 -- Karl\'{\i}n\\
+% CZ 186\;75\\
+% Czech Republic
+% }
+% \email{dostalik@karlin.mff.cuni.cz}
+
+% \author{Karel T\r{u}ma}
+% \address{
+% Faculty of Mathematics and Physics\\
+% Charles University\\
+% Sokolovsk\'a 83\\
+% Praha 8 -- Karl\'{\i}n\\
+% CZ 186\;75\\
+% Czech Republic
+% }
+% \email{ktuma@karlin.mff.cuni.cz}
+
+\thanks{V\'{\i}t Pr\r{u}\v{s}a thanks the Czech Science Foundation, grant number 18-12719S, for its support.}
+\keywords{}
+\subjclass[2000]{
+% http://www.ams.org/msc/
+}
+
+\begin{document}
+
+\begin{abstract}
+%\input{article-abstract}
+\end{abstract}
+
+\maketitle
+
+%\addtocontents{toc}{\protect\begin{multicols}{2}} % workaround for table of contents in two columns in amsart documentclass
+%\tableofcontents
+
+%\linenumbers
+
+%\input{article-body}
+
+\bibliographystyle{chicago}
+\bibliography{vit-prusa}
+
+%\addtocontents{toc}{\protect\end{multicols}} % workaround for table of contents in two columns in amsart documentclass
+\end{document}
+
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: t
+%%% End: 

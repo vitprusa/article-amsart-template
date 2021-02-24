@@ -1,0 +1,17 @@
+auto/
+*.*~
+*.pdf
+*.aux
+*.bbl
+*.blg
+*.dvi
+*.log
+*.out
+*.ps
+*.toc
+*.nav
+*.snm
+_region_.*
+prv_*
+*.zip
+*.synctex.gz
