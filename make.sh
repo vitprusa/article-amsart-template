@@ -5,16 +5,14 @@ project_name=""
 
 function compile_project {
 
-latex ${project_name}.tex
+pdflatex ${project_name}.tex
 bibtex ${project_name}
-latex ${project_name}.tex
-latex ${project_name}.tex
-dvips ${project_name}.dvi
-ps2pdf ${project_name}.ps
+pdflatex ${project_name}.tex
+pdflatex ${project_name}.tex
 
 mv ${project_name}.pdf ${project_name}-$(date +%Y-%m-%d).pdf
 
-acroread ${project_name}-$(date +%Y-%m-%d).pdf
+evince ${project_name}-$(date +%Y-%m-%d).pdf
 }
 
 function archive_project {

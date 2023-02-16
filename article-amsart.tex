@@ -56,16 +56,12 @@
 
 \input{vit-prusa-macros-experimental}
 
-\title[]{}
+\title[]{Document title}
 
-\author{V\'{\i}t Pr\r{u}\v{s}a}
 \date{\today}
+
+\author{Your name}
 \address{
-% Texas A\&M University\\
-% Department of Mechanical Engineering\\
-% 3123 TAMU\\
-% College Station TX 77843-3123\\
-% United States of America
 Faculty of Mathematics and Physics\\
 Charles University\\
 Sokolovsk\'a 83\\
@@ -73,7 +69,18 @@ Praha 8 -- Karl\'{\i}n\\
 CZ 186\;75\\
 Czech Republic
 }
-\email{prusv@karlin.mff.cuni.cz}
+\email{your.email@karlin.mff.cuni.cz}
+
+% \author{V\'{\i}t Pr\r{u}\v{s}a}
+% \address{
+% Faculty of Mathematics and Physics\\
+% Charles University\\
+% Sokolovsk\'a 83\\
+% Praha 8 -- Karl\'{\i}n\\
+% CZ 186\;75\\
+% Czech Republic
+% }
+% \email{prusv@karlin.mff.cuni.cz}
 
 % \author{K. R. Rajagopal}
 % \address{
@@ -140,26 +147,44 @@ Czech Republic
 % }
 % \email{ktuma@karlin.mff.cuni.cz}
 
-\thanks{V\'{\i}t Pr\r{u}\v{s}a thanks the Czech Science Foundation, grant number 18-12719S, for its support.}
-\keywords{}
+% \author{Jan Blechta}
+% \address{
+% Faculty of Mathematics and Physics\\
+% Charles University\\
+% Sokolovsk\'a 83\\
+% Praha 8 -- Karl\'{\i}n\\
+% CZ 186\;75\\
+% Czech Republic
+% }
+% \email{blechta@karlin.mff.cuni.cz}
+
+\thanks{You can thank the funding agency here.}
+\keywords{mathematical modelling}
 \subjclass[2000]{
-% http://www.ams.org/msc/
+% See http://www.ams.org/msc/ for Mathematics Subject Classification
 }
 
 \begin{document}
 
 \begin{abstract}
-%\input{article-abstract}
+  % \input{article-abstract}
+  Here comes the abstract.
 \end{abstract}
 
 \maketitle
 
-%\addtocontents{toc}{\protect\begin{multicols}{2}} % workaround for table of contents in two columns in amsart documentclass
+%\addtocontents{toc}{\protect\begin{multicols}{2}} % workaround for table of contents in two columns in amsart documentclass, see also the corresponding \addtocontents{toc}{\protect\end{multicols}} line at the end of the document
 %\tableofcontents
 
 %\linenumbers
 
 %\input{article-body}
+
+\section{Introduction}
+\label{sec:introduction}
+
+
+This is the text body.
 
 \bibliographystyle{chicago}
 \bibliography{vit-prusa}
