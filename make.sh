@@ -24,7 +24,7 @@ function upload_project {
     # ADD PDF PASSWORD HERE
     pdftk ${project_name}.pdf output ${project_name}-lock.pdf user_pw #_PASSWORD_
     # ADD TARGET DIRECTORY
-    scp ${project_name}-lock.pdf prusv@hill.karlin.mff.cuni.cz:public_html/download/gacr/${project_name}-$(date +%Y-%m-%d-at-%H-%M-%S)-lock.pdf
+    scp ${project_name}-lock.pdf #_SOME_REMOTE_DIRECTORY_/${project_name}-$(date +%Y-%m-%d-at-%H-%M-%S)-lock.pdf
     rm ${project_name}-lock.pdf
 }
 
